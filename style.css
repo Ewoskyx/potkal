@@ -350,18 +350,18 @@ footer {
 @media (max-width: 414px) {
   /* Video Container */
   .videoContainer {
-    height: 56.25vw; 
+    height: 100vw; 
   }
 
   /* Hero Logo */
   .hero-logo {
-    width: 50%; 
+    width: 70%; 
     max-width: 300px; 
   }
 
   /* Hero Text */
   .hero-text {
-    font-size: 1.8vw; 
+    font-size: 3vw; 
     max-width: 80%; 
   }
 
@@ -375,18 +375,19 @@ footer {
   h1 {
     margin-left: 3vw;
     margin-bottom: 2vh;
+    font-weight: 700;
   }
 
   /* Paragraf Sol */
   .prg-left p {
     width: 100%; 
-    font-size: 2vw;
+    font-size: 3vw;
     line-height: 2vh;
     padding-bottom: 12px;
   }
   .prg-right p {
     width: 100%;
-    font-size: 2vw;
+    font-size: 3vw;
     line-height: 2vh;
     padding-bottom: 12px;
   }
@@ -394,6 +395,7 @@ footer {
   .prg-right p:last-child {
     width: 100%; /* Tam genişlik */
     text-align: end;
+    font-weight: bold;
   }
 
   /* Uzman Div */
@@ -449,6 +451,7 @@ footer {
 
   .modal-content p{
     font-size: 2.7vw;
+    line-height: 2vh;
   }
 
   .social-div {
@@ -462,28 +465,27 @@ footer {
   }
   
   .footer-content {
-    max-width: 90%; /* Mobil görünümde genişliği azalt */
+    max-width: 90%; 
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Mobilde dikey düzende sırala */
-    justify-content: center; /* İçeriği dikeyde ortala */
-    align-items: center; /* İçeriği yatayda ortala */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
   }
   
   .footer-address,
   .footer-contact,
   .footer-social {
     flex: 1;
-    width: 100%; /* İçeriğin genişliğini tamamen kapla */
+    width: 100%; 
     text-align: center;
-    margin-bottom: 20px; /* İçerikler arasında boşluk bırak */
+    margin-bottom: 20px; 
   }
   
   .footer-address p,
   .footer-contact p {
     margin: 10px 0;
     text-decoration: none;
-    color: #007bff;
     font-size: 4vw;
   }
   
@@ -492,17 +494,12 @@ footer {
     margin-right: 10px;
     color: #e3d6d6;
     text-decoration: none;
+  } 
+
+  .footer-contact a {
+    text-decoration: none;
+    color: #e3d6d6;
   }
-  
-  .footer-social a:hover {
-    color: #007bff;
-  }
-  
-  .footer-address p:hover,
-  .footer-contact p:hover {
-    color: #007bff;
-  }
-  
 
 }
 
