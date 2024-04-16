@@ -327,15 +327,10 @@ footer {
   color: #e3d6d6;
 }
 
-.footer-social a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #e3d6d6;
-  text-decoration: none;
-}
-
-.footer-social a:hover {
-  color: #007bff;
+.footer-social a img {
+  height: 15%;
+  width: 15%;
+  margin-right: 12px;
 }
 
 .footer-address p:hover,
@@ -345,29 +340,28 @@ footer {
 
 /*MOBIL*/
 
-
 /* 414 ve altı */
 @media (max-width: 414px) {
   /* Video Container */
   .videoContainer {
-    height: 100vw; 
+    height: 100vw;
   }
 
   /* Hero Logo */
   .hero-logo {
-    width: 70%; 
-    max-width: 300px; 
+    width: 70%;
+    max-width: 300px;
   }
 
   /* Hero Text */
   .hero-text {
-    font-size: 3vw; 
-    max-width: 80%; 
+    font-size: 3vw;
+    max-width: 80%;
   }
 
   /* Paragraf */
   .paragraf {
-    padding-bottom: 12px; 
+    padding-bottom: 12px;
     height: auto;
   }
 
@@ -379,7 +373,7 @@ footer {
 
   /* Paragraf Sol */
   .prg-left p {
-    width: 100%; 
+    width: 100%;
     font-size: 3vw;
     line-height: 2vh;
     padding-bottom: 12px;
@@ -400,9 +394,9 @@ footer {
   .uzman-div {
     min-height: 60px;
   }
-  
+
   .uzman-div h2 {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 
   .wrapper {
@@ -411,28 +405,28 @@ footer {
   }
 
   .wrapper.odd {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 
   .wrapper.even {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 
   .wrapper .gorsel {
     width: 100%;
-    height: 25vh; 
-    order:2;
+    height: 25vh;
+    order: 2;
   }
 
   .wrapper .gorsel img {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
   }
 
   .wrapper .info {
     width: 100%;
-    height: 25vh; 
-    order:1;
+    height: 25vh;
+    order: 1;
   }
 
   button {
@@ -447,7 +441,7 @@ footer {
     font-size: 7vw;
   }
 
-  .modal-content p{
+  .modal-content p {
     font-size: 2.7vw;
     line-height: 2vh;
   }
@@ -456,61 +450,52 @@ footer {
     flex-direction: column;
     height: 100vh;
   }
-  
+
   .footer {
     background-color: rgba(0, 0, 0, 1);
     padding: 30px 0;
   }
-  
+
   .footer-content {
-    max-width: 90%; 
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   .footer-address,
   .footer-contact,
   .footer-social {
     flex: 1;
-    width: 100%; 
+    width: 100%;
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
-  
+
   .footer-address p,
   .footer-contact p {
     margin: 10px 0;
     text-decoration: none;
     font-size: 4vw;
   }
-  
-  .footer-social a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #e3d6d6;
-    text-decoration: none;
-  } 
 
   .footer-contact a {
     text-decoration: none;
     color: #e3d6d6;
   }
-
 }
 
-/* 414 - 767 arası */ 
-@media (min-width: 415px) and (max-width: 767px) { 
-
+/* 414 - 767 arası */
+@media (min-width: 415px) and (max-width: 767px) {
   .hero-logo {
-    width: 70%; 
-    max-width: 300px; 
+    width: 70%;
+    max-width: 300px;
   }
 
   .prg-left p {
-    width: 100%; 
+    width: 100%;
     font-size: 1.9vw;
     line-height: 5vh;
     padding-bottom: 12px;
@@ -531,12 +516,20 @@ footer {
     min-height: 80px;
   }
 
+  .social-div {
+    height: auto;
+    padding: 24px 12px;
+  }
+
+  .social-div img {
+    max-height: 150px;
+    max-width: 150px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* CSS kuralları buraya gelecek */
 }
-@media (min-width: 1025px) { 
-  /* CSS kuralları buraya gelecek */ 
+@media (min-width: 1025px) {
+  /* CSS kuralları buraya gelecek */
 }
-
