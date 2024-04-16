@@ -139,7 +139,7 @@ p {
 }
 
 .uzman-div h2 {
-  color: #333;
+  color: #fff;
   font-size: 44px;
   text-align: center;
 }
@@ -375,7 +375,6 @@ footer {
   h1 {
     margin-left: 3vw;
     margin-bottom: 2vh;
-    font-weight: 700;
   }
 
   /* Paragraf Sol */
@@ -395,7 +394,6 @@ footer {
   .prg-right p:last-child {
     width: 100%; /* Tam genişlik */
     text-align: end;
-    font-weight: bold;
   }
 
   /* Uzman Div */
