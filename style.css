@@ -13,6 +13,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .videoContainer {
@@ -116,6 +117,8 @@ p {
   font-weight: 400;
   width: 70%;
   text-align: end;
+  margin-right: 2vw;
+  margin-top: 4vh;
 }
 
 /*UZMANLARIMIZ*/
@@ -128,7 +131,7 @@ p {
 
 .uzman-div {
   width: 100vw;
-  min-height:120px;
+  min-height: 120px;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -214,9 +217,9 @@ button {
 }
 
 button:hover {
-    background-color: #222;
-    color: #eee; 
-    box-shadow: none;
+  background-color: #222;
+  color: #eee;
+  box-shadow: none;
 }
 
 .info h3 {
@@ -234,7 +237,6 @@ button:hover {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  /* pointer-events: all; */
 }
 
 .modal-content {
@@ -259,73 +261,230 @@ button:hover {
   cursor: pointer;
 }
 
-
 .social-div {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 40vh;
-    background: url('./social-bg.jpg');
-    background-position: center center;
-    background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+  background: url("./social-bg.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .social-div::before {
- position: absolute;
- content: '';
- top: 0;
- left:0;
- width: 100%;
- height: 100%;
- z-index: 1000;
- background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .social-div img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    z-index: 1001;
-    transition: all 0.3s ease-in-out;
-    border-radius: 50%;
-    border: none;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  z-index: 1001;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  border: none;
 }
 
 .social-div img:hover {
-    transform: scale(1.05);
-    box-shadow: rgba(255, 255, 255, 0.9) 0px 5px 15px;
-    cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 0.9) 0px 5px 15px;
+  cursor: pointer;
 }
 
-
-
 footer {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 30px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-address,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-address p,
+.footer-contact p {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #e3d6d6;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #e3d6d6;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-address p:hover,
+.footer-contact p:hover {
+  color: #007bff;
+}
+
+/*MOBIL*/
+
+
+/* 414 ve altı */
+@media (max-width: 414px) {
+  /* Video Container */
+  .videoContainer {
+    height: 56.25vw; 
+  }
+
+  /* Hero Logo */
+  .hero-logo {
+    width: 50%; 
+    max-width: 300px; 
+  }
+
+  /* Hero Text */
+  .hero-text {
+    font-size: 1.8vw; 
+    max-width: 80%; 
+  }
+
+  /* Paragraf */
+  .paragraf {
+    padding-bottom: 12px; 
+    height: auto;
+  }
+
+  /* Başlık */
+  h1 {
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+  }
+
+  /* Paragraf Sol */
+  .prg-left p {
+    width: 100%; 
+    font-size: 2vw;
+    line-height: 2vh;
+    padding-bottom: 12px;
+  }
+  .prg-right p {
+    width: 100%;
+    font-size: 2vw;
+    line-height: 2vh;
+    padding-bottom: 12px;
+  }
+  /* Sağ Paragraf Son */
+  .prg-right p:last-child {
+    width: 100%; /* Tam genişlik */
+    text-align: end;
+  }
+
+  /* Uzman Div */
+  .uzman-div {
+    min-height: 60px;
+  }
+  
+  .uzman-div h2 {
+    font-size: 4vw; 
+  }
+
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .wrapper.odd {
+    flex-direction: column-reverse; 
+  }
+
+  .wrapper.even {
+    flex-direction: column-reverse; 
+  }
+
+  .wrapper .gorsel {
+    width: 100%;
+    height: 25vh; 
+    order:2;
+  }
+
+  .wrapper .gorsel img {
+    width: 100%; 
+    height: 100%; 
+  }
+
+  .wrapper .info {
+    width: 100%;
+    height: 25vh; 
+    order:1;
+  }
+
+  button {
+    padding: 6px 4px;
+    border-radius: 4px;
+  }
+
+  .info p {
+    font-size: 4vw;
+  }
+  .info h3 {
+    font-size: 7vw;
+  }
+
+  .modal-content p{
+    font-size: 2.7vw;
+  }
+
+  .social-div {
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .footer {
     background-color: rgba(0, 0, 0, 1);
     padding: 30px 0;
   }
   
   .footer-content {
-    max-width: 1200px;
+    max-width: 90%; /* Mobil görünümde genişliği azalt */
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Mobilde dikey düzende sırala */
+    justify-content: center; /* İçeriği dikeyde ortala */
+    align-items: center; /* İçeriği yatayda ortala */
   }
   
   .footer-address,
   .footer-contact,
   .footer-social {
     flex: 1;
+    width: 100%; /* İçeriğin genişliğini tamamen kapla */
     text-align: center;
+    margin-bottom: 20px; /* İçerikler arasında boşluk bırak */
   }
   
   .footer-address p,
   .footer-contact p {
     margin: 10px 0;
     text-decoration: none;
-    color: #e3d6d6;
+    color: #007bff;
+    font-size: 4vw;
   }
   
   .footer-social a {
@@ -343,3 +502,46 @@ footer {
   .footer-contact p:hover {
     color: #007bff;
   }
+  
+
+}
+
+/* 414 - 767 arası */ 
+@media (min-width: 415px) and (max-width: 767px) { 
+
+  .hero-logo {
+    width: 70%; 
+    max-width: 300px; 
+  }
+
+  .prg-left p {
+    width: 100%; 
+    font-size: 1.9vw;
+    line-height: 5vh;
+    padding-bottom: 12px;
+  }
+  .prg-right p {
+    width: 100%;
+    font-size: 1.9vw;
+    line-height: 5vh;
+    padding-bottom: 12px;
+  }
+
+  .prg-right p:last-child {
+    width: 100%; /* Tam genişlik */
+    text-align: end;
+  }
+
+  .uzman-div {
+    min-height: 80px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS kuralları buraya gelecek */
+}
+@media (min-width: 1025px) { 
+  /* CSS kuralları buraya gelecek */ 
+}
+
